@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
+app.use(express.static(__dirname + "/public"));
 
 const todos = [
   { id: 1, title: "こんにちは", completed: true },
